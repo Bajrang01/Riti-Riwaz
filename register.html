@@ -8,14 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-
+    <script>
+        function redirectToHomepage() {
+            window.location.href = "homepage.html";
+        }
+    </script>
 </head>
 
 <body>
     <img src="images/image.png" alt="">
     <div class="register-container">
         <h1 class="register-title">Register for Riti-Riwaz Wedding</h1>
-        <form class="register-form" action="homepage.html">
+        <form class="register-form" onsubmit="redirectToHomepage(); return false;">
             <label for="role">Role:</label>
             <select id="role" name="role" required>
         <option value="Bride">Bride</option>
